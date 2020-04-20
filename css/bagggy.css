@@ -1,6 +1,10 @@
 ﻿/*************************************************************************************************************
 GLOBAL
 *************************************************************************************************************/
+div#preload {
+    display: none;
+}
+
 @font-face {
     font-family: "TeXGyreHerosCondensed-Regular";
     src: url('texgyreheroscn-regular.woff2') format('woff2');
@@ -147,6 +151,9 @@ section video {
 	margin-top:300px;
 }
 
+.one {
+	margin-top:-815px;
+}
 
 
 
