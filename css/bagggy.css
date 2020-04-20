@@ -126,10 +126,6 @@ img.care-icons {
 section {
   position: relative;
   text-align: center;
-  min-height: 300px;
-  max-height: 700px;
-  margin-bottom:240px;
-  height: 80%;
 }
 
 
@@ -142,18 +138,7 @@ section video {
     height: auto;
 }
 
-.one-column {
-	margin-top:300px;
-	margin-bottom:300px;
-}
 
-.right-column {
-	margin-top:300px;
-}
-
-.one {
-	margin-top:-815px;
-}
 
 
 
