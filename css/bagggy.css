@@ -1,4 +1,68 @@
-﻿/*************************************************************************************************************
+﻿#email{
+	position: fixed;
+	bottom: 50px;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+#email #mc_embed_signup {
+    position: relative;
+    float: none;
+    margin: 0 auto;
+    display: block;
+    width: 340px;
+}
+
+#mc_embed_signup{
+	clear:left; 
+	width:100%;
+}
+
+.newsletter #mce-EMAIL {
+    width: 290px;
+    border-bottom: 2px solid black;
+
+    line-height: 2;
+}
+
+.newsletter input {
+    position: relative;
+    float: left;
+    outline: 0;
+    border-radius: 0;
+    font-family: "TeXGyreHerosCondensed-Regular", serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background: none;
+    border: 0;
+    color: black;
+    line-height: 0;
+}
+
+.newsletter #mc-embedded-subscribe {
+    width: 40px;
+    height: 40px;
+   	background-image: url('../img/arrow.png');
+    background-repeat: no-repeat; 
+    background-position: center;
+	background-color:transparent;
+	background-size:32px;
+	border-bottom: 2px solid black;
+}
+
+.newsletter .button {
+	border:none;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+
+
+
+/*************************************************************************************************************
 GLOBAL
 *************************************************************************************************************/
 @font-face {
@@ -70,7 +134,7 @@ h1 {
 }
 
 h1.take-care {
-	margin-top:8px
+	margin-top:2px
 }
 
 
@@ -98,7 +162,7 @@ img.care-icons {
 
 .fixed-words-wrapper-3 {
 	position:fixed;
-	top:260px;
+	bottom:50px;
 	width:100%;
 	z-index:100;
 	    pointer-events: none;
@@ -109,6 +173,27 @@ img.care-icons {
 	pointer-events: none;
 }
 
+
+.thankyou {
+    animation:signup-response 0.5s 1;
+   -webkit-animation:signup-response 0.5s 1;
+   animation-fill-mode: forwards;
+
+   animation-delay:5s;
+   -webkit-animation-delay:5s; /* Safari and Chrome */
+   -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes signup-response{
+    from {opacity :1;}
+    to {opacity :0;}
+}
+
+@-webkit-keyframes signup-response{
+    from {opacity :1;}
+    to {opacity :0;}
+}
+
 .Loop {
   position: relative;
   height: 100%;
@@ -116,12 +201,16 @@ img.care-icons {
   -webkit-overflow-scrolling: touch;
 }
 
+.bumbum {
+	margin-top:-455px;
+}
+
 section {
   position: relative;
   text-align: center;
   min-height: 300px;
   max-height: 700px;
-  	margin-bottom:240px;
+  margin-bottom:240px;
   height: 80%;
 }
 
@@ -159,9 +248,7 @@ section video {
 		top:160px;
 	}
 
-	.fixed-words-wrapper-3 {
-		top:220px;
-	}
+
 	
 	.bagggy-logo {
 		top:23%;	
@@ -171,6 +258,14 @@ section video {
 	.bagggy-logo.scale-img {
 		transform:scale(0.12);
 		top:85px;
+	}
+	
+	.newsletter input {
+	    font-size: 15px;
+	}
+	
+	.newsletter #mce-EMAIL { 
+		line-height:2.4;
 	}
 	
 }
@@ -228,6 +323,15 @@ section video {
 	.bagggy-logo.scale-img {
 		transform:scale(0.28);
 	}
+
+	.newsletter #mce-EMAIL {
+	    line-height: 2;
+	}
+	.newsletter #mc-embedded-subscribe {
+	    margin-top: -0.5px;
+	}
+	
+
 }
 
 @media (max-width: 414px) {
@@ -237,6 +341,11 @@ section video {
 	.bagggy-logo.scale-img {
 		transform:scale(0.36);
 	}
+	section {
+	  	margin-bottom:480px;
+	
+	}
+	
 }
 
 @media (max-width: 375px) {
